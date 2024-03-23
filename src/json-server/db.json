@@ -1,0 +1,8 @@
+{
+  "todos": [
+    { "id": 1, "text": "read books", "isDone": false, "isEdit": false },
+    { "id": 2, "text": "workout", "isDone": false, "isEdit": false },
+    { "id": 3, "text": "study", "isDone": false, "isEdit": false },
+    { "id": 4, "text": "programing", "isDone": false, "isEdit": false }
+  ]
+}
