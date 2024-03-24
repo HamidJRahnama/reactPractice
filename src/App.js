@@ -4,6 +4,7 @@ import TodoReducer from "./components/todoWithReducer/TodoReducer";
 
 import React from "react";
 import TodoRedux from "./components/todoWithRedux/TodoRedux";
+import LifecycleCC from "./components/Lidecycle/classComponent/LifecycleCC";
 
 // fetch('https://my-json-server.typicode.com/HamidJRahnama/myApi/todos')
 //       .then(response => response.json())
@@ -14,8 +15,9 @@ export const App = () => {
       <>
         <div className=" container ">
           <div className="row">
-            <div className=" col-6 ">
-              <TodoRedux />
+            <div className=" col ">
+              <LifecycleCC />
+              {/* <TodoRedux /> */}
             </div>
           </div>
         </div>

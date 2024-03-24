@@ -8,11 +8,14 @@ import { indexStore } from "./components/todoWithRedux/Store/indexStore";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <Provider store={indexStore}>
-      <App />
-    </Provider>
-  </React.StrictMode>
+  <>
+    {/* <React.StrictMode> */}
+    {/* <Provider store={indexStore}> */}
+    <App />
+    {/* </Provider> */}
+
+    {/* </React.StrictMode> */}
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function
