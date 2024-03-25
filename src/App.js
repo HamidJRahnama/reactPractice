@@ -1,30 +1,41 @@
+import React from "react";
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import TodoReducer from "./components/todoWithReducer/TodoReducer";
 
-import React from "react";
-import TodoRedux from "./components/todoWithRedux/TodoRedux";
-import LifecycleCC from "./components/Lidecycle/classComponent/LifecycleCC";
+import Posts from "./components/posts/Posts";
 
 // fetch('https://my-json-server.typicode.com/HamidJRahnama/myApi/todos')
 //       .then(response => response.json())
 //       .then(json => console.log(json))
+
 export const App = () => {
   return (
     <div>
-      <>
-        <div className=" container ">
-          <div className="row">
-            <div className=" col ">
-              <LifecycleCC />
-              {/* <TodoRedux /> */}
-            </div>
-          </div>
-        </div>
-      </>
+      <Posts />
     </div>
   );
 };
+
+// import TodoReducer from "./components/todoWithReducer/TodoReducer";
+// import TodoRedux from "./components/todoWithRedux/TodoRedux";
+// import LifecycleCC from "./components/Lidecycle/classComponent/LifecycleCC";
+
+// export const App = () => {
+//   return (
+//     <div>
+//       <>
+//         <div className=" container ">
+//           <div className="row">
+//             <div className=" col ">
+//               <LifecycleCC />
+//               <TodoRedux />
+//             </div>
+//           </div>
+//         </div>
+//       </>
+//     </div>
+//   );
+// };
 
 // function App() {
 //   return (
