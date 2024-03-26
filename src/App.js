@@ -2,16 +2,23 @@ import React from "react";
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 
-import Posts from "./components/posts/Posts";
+// import Posts from "./components/posts/Posts";
+import BlogPosts from "./components/posts/BlogPosts";
 
 // fetch('https://my-json-server.typicode.com/HamidJRahnama/myApi/todos')
 //       .then(response => response.json())
 //       .then(json => console.log(json))
+// "todos": [
+//   { "id": 1, "text": "read books", "isDone": false, "isEdit": false },
+//   { "id": 2, "text": "workout", "isDone": false, "isEdit": false },
+//   { "id": 3, "text": "study", "isDone": false, "isEdit": false },
+//   { "id": 4, "text": "programing", "isDone": false, "isEdit": false }
+// ]
 
 export const App = () => {
   return (
     <div>
-      <Posts />
+      <BlogPosts />
     </div>
   );
 };
