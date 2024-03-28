@@ -5,28 +5,45 @@ import PostContent from "./PostContent";
 export default class BlogPosts extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
-      Posts: null,
+      posts: null,
+      currentPostIndex: null,
     };
   }
 
-  async getPosts() {
-    // fetch("https://github.com/HamidJRahnama/myApi.git")
-    fetch("https://my-json-server.typicode.com/HamidJRahnama/myApi/")
-      .then((response) => response.json())
-      .then((json) => console.log(json));
+  async getPost() {
+    const posts = await fetch("http://localhost:3001/posts");
+    return await posts.json();
   }
+
   componentDidMount() {
-    this.getPosts();
+    this.getPost().then((posts) =>
+      this.setState({ posts, currentPostIndex: 1 })
+    );
+  }
+  changeCurrentPostIndex(index) {
+    this.setState({ currentPostIndex: index });
   }
   render() {
     return (
       <>
+        <button onClick={() => this.changeCurrentPostIndex(2)}>index</button>
         <div className=" d-flex">
-          <PostSidebar />
-          <PostContent />
+          <PostSidebar
+            changeCurrentPostIndex={this.changeCurrentPostIndex.bind(this)}
+            posts={this.state.posts}
+          />
+          {this.state.posts ? (
+            <PostContent post={this.state.posts[this.state.currentPostIndex]} />
+          ) : null}
         </div>
       </>
     );
   }
 }
+// {
+//   "id": 4,
+//   "post-id": 2,
+//   "body": " Such a profound way to describe the maintenance work on such an iconic structure. It really puts into perspective the effort required to keep it looking fresh and vibrant."
+// },
