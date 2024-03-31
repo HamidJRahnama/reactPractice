@@ -3,25 +3,28 @@ import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 
 // import Posts from "./components/posts/Posts";
-import BlogPosts from "./components/posts/BlogPosts";
 
 // fetch('https://my-json-server.typicode.com/HamidJRahnama/myApi/todos')
 //       .then(response => response.json())
 //       .then(json => console.log(json))
-// "todos": [
-//   { "id": 1, "text": "read books", "isDone": false, "isEdit": false },
-//   { "id": 2, "text": "workout", "isDone": false, "isEdit": false },
-//   { "id": 3, "text": "study", "isDone": false, "isEdit": false },
-//   { "id": 4, "text": "programing", "isDone": false, "isEdit": false }
-// ]
 
+import Clock from "./components/Lidecycle/clock/Clock";
 export const App = () => {
   return (
     <div>
-      <BlogPosts />
+      <Clock />
     </div>
   );
 };
+
+// import BlogPosts from "./components/posts/BlogPosts";
+// export const App = () => {
+//   return (
+//     <div>
+//       <BlogPosts />
+//     </div>
+//   );
+// };
 
 // import TodoReducer from "./components/todoWithReducer/TodoReducer";
 // import TodoRedux from "./components/todoWithRedux/TodoRedux";
