@@ -8,14 +8,24 @@ import "bootstrap/dist/css/bootstrap.css";
 //       .then(response => response.json())
 //       .then(json => console.log(json))
 
-import Clock from "./components/Lidecycle/clock/Clock";
+import Demo from "./Demo";
+import Counter from "./components/functionalComponents/counter/Counter";
 export const App = () => {
   return (
     <div>
-      <Clock />
+      <Counter />
     </div>
   );
 };
+
+// import Clock from "./components/Lidecycle/clock/Clock";
+// export const App = () => {
+//   return (
+//     <div>
+//       <Clock />
+//     </div>
+//   );
+// };
 
 // import BlogPosts from "./components/posts/BlogPosts";
 // export const App = () => {
