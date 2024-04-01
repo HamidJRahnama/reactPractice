@@ -194,5 +194,47 @@
       "post-id": 10,
       "body": "This quote inspires self-acceptance and authenticity. A timeless piece of advice for anyone navigating life's challenges."
     }
+  ],
+  "cocCards": [
+    {
+      "title": "Barbarians",
+      "level": 6,
+      "training": "14 Secound",
+      "speed": "Medium",
+      "cost": 5,
+      "Desc": " A group of quick and versatile melee attackers."
+    },
+    {
+      "title": "Hog Rider",
+      "level": 10,
+      "training": "4 seconds",
+      "speed": "Fast",
+      "cost": 4,
+      "Desc": "Fast melee troop that targets buildings and leaps over walls. Get ready to ride into battle"
+    },
+    {
+      "title": "Electro Dragon",
+      "level": 4,
+      "training": "3.5 seconds",
+      "speed": "Medium",
+      "cost": 8,
+      "Desc": "Flying troop that deals chain lightning damage to multiple targets."
+    },
+    {
+      "title": "Minion Horde",
+      "level": 10,
+      "training": "6 seconds",
+      "speed": "Very Fast",
+      "cost": 5,
+      "Desc": "Six fast, unarmored flying attackers. A swarm of danger awaits your foes"
+    },
+    {
+      "title": "P.E.K.K.A",
+      "level": 7,
+      "training": "25 seconds",
+      "speed": "Slow",
+      "cost": 7,
+      "Desc": "A heavily armored, slow melee attacker. A true powerhouse on the battlefield"
+    }
   ]
 }
