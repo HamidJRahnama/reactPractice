@@ -199,42 +199,43 @@
     {
       "title": "Barbarians",
       "level": 6,
-      "training": "14 Secound",
+      "training": 14,
       "speed": "Medium",
       "cost": 5,
-      "Desc": " A group of quick and versatile melee attackers."
+      "desc": " A group of quick and versatile melee attackers."
     },
     {
       "title": "Hog Rider",
       "level": 10,
-      "training": "4 seconds",
+      "training": 4,
       "speed": "Fast",
       "cost": 4,
-      "Desc": "Fast melee troop that targets buildings and leaps over walls. Get ready to ride into battle"
+      "desc": "Fast melee troop that targets buildings and leaps over walls. Get ready to ride into battle"
     },
     {
       "title": "Electro Dragon",
       "level": 4,
-      "training": "3.5 seconds",
+      "training": 3.5,
       "speed": "Medium",
       "cost": 8,
-      "Desc": "Flying troop that deals chain lightning damage to multiple targets."
+      "desc": "Flying troop that deals chain lightning damage to multiple targets."
     },
     {
       "title": "Minion Horde",
       "level": 10,
-      "training": "6 seconds",
+      "training": 6,
       "speed": "Very Fast",
       "cost": 5,
-      "Desc": "Six fast, unarmored flying attackers. A swarm of danger awaits your foes"
+      "desc": "Six fast, unarmored flying attackers. A swarm of danger awaits your foes"
     },
     {
       "title": "P.E.K.K.A",
       "level": 7,
-      "training": "25 seconds",
+      "training": 25,
       "speed": "Slow",
       "cost": 7,
-      "Desc": "A heavily armored, slow melee attacker. A true powerhouse on the battlefield"
+      "desc": "A heavily armored, slow melee attacker. A true powerhouse on the battlefield"
     }
-  ]
+  ],
+  "users": [{}]
 }

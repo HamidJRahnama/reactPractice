@@ -1,10 +1,11 @@
 import React from "react";
 
-const CocCard = () => {
+const CocCard = (props) => {
+  let hero = props.hero;
   return (
     <div
       className="card text-center border border-primary shadow-0 "
-      style={{ width: "18rem" }}
+      style={{ width: "18rem", height: "28rem" }}
     >
       <div
         className="bg-image hover-overlay ripple"
@@ -15,30 +16,23 @@ const CocCard = () => {
       </div>
 
       <div className="card-body">
-        <span>level 5</span>
-        <h5 className="card-title">Card title</h5>
-        <p className="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content. bulk of the card's content. bulk of the
-          card's content. bulk of the card's content. bulk of the card's
-          content. bulk of the card's content. bulk of the card's content. bulk
-          of the card's content. bulk of the card's content. bulk of the card's
-          content.
-        </p>
+        <span>LEVEL {hero.level}</span>
+        <h2 className="card-title">{hero.title}</h2>
+        <p className="card-text">{hero.desc}</p>
       </div>
-      <div className="card-footer jus">
+      <div className="card-footer bg-danger  ">
         <div className="d-flex justify-content-between   ">
           <div>
-            <h3>5</h3>
+            <h4>{hero.training}</h4>
             <span>TRAINING</span>
           </div>
           <div>
-            <h3>5</h3>
+            <h4>{hero.speed}</h4>
             <span>SPEED</span>
           </div>
           <div>
-            <h3>5</h3>
-            <span>TRAINING</span>
+            <h4>{hero.cost}</h4>
+            <span>COST</span>
           </div>
         </div>
       </div>

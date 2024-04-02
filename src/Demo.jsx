@@ -1,17 +1,31 @@
 import React, { useEffect, useState } from "react";
 
 const Demo = () => {
-  const [demo, setDemo] = useState(1);
-  const [count, setCount] = useState(1);
-  useEffect(() => {
-    console.log(count);
-  }, [demo]);
+  const [count, setCount] = useState(0);
 
+  let plus = () => {
+    setTimeout(() => {
+      setCount((prevState) => {
+        return prevState + 1;
+      });
+    }, 1500);
+  };
+  let minus = () => {
+    setTimeout(() => {
+      setCount((prevState) => {
+        return prevState - 1;
+      });
+    }, 1500);
+  };
   return (
-    <div>
-      <button onClick={() => setCount(count + 1)}>Click</button>
-      <button onClick={() => setDemo(demo + 1)}>change state</button>
-      <p>{count}</p>
+    <div className=" d-flex ">
+      <button onClick={() => plus()} className="btn btn-sm btn-secondary ">
+        +
+      </button>
+      <h1 className="m-1">{count}</h1>
+      <button onClick={() => minus()} className="btn btn-sm btn-secondary ">
+        -
+      </button>
     </div>
   );
 };

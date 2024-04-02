@@ -6,16 +6,25 @@ import "bootstrap/dist/css/bootstrap.css";
 
 // fetch('https://my-json-server.typicode.com/HamidJRahnama/myApi/todos')
 //       .then(response => response.json())
-//       .then(json => console.log(json))
+//       .then(data => console.log(json))
 
-import CocCardsSlider from "./components/CocCardSlider/CocCardsSlider";
+import SignUp from "./components/signUpIn/SignUp";
 export const App = () => {
   return (
     <div>
-      <CocCardsSlider />
+      <SignUp />
     </div>
   );
 };
+
+// import CocCardsSlider from "./components/CocCardSlider/CocCardsSlider";
+// export const App = () => {
+//   return (
+//     <div className=" justify-content-center">
+//       <CocCardsSlider />
+//     </div>
+//   );
+// };
 
 // import Demo from "./Demo";
 // import Counter from "./components/functionalComponents/counter/Counter";
