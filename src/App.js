@@ -8,11 +8,13 @@ import "bootstrap/dist/css/bootstrap.css";
 //       .then(response => response.json())
 //       .then(data => console.log(json))
 
+import Demo from "./Demo";
 import SignUp from "./components/signUpIn/SignUp";
 export const App = () => {
   return (
     <div>
-      <SignUp />
+      <Demo />
+      {/* <SignUp /> */}
     </div>
   );
 };

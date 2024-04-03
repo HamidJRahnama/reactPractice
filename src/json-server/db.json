@@ -237,5 +237,8 @@
       "desc": "A heavily armored, slow melee attacker. A true powerhouse on the battlefield"
     }
   ],
-  "users": [{}]
+  "users": [
+    { "id": 1, "email": "demo@test.com" },
+    { "id": 1, "email": "info@test.com" }
+  ]
 }
