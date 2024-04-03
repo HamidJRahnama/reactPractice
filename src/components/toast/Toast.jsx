@@ -7,7 +7,8 @@ const Toast = ({ type, message }) => {
     if (message) {
       toast[type](message);
     }
-  }, [message, type]);
+  });
+
   return (
     <>
       <ToastContainer
