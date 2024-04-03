@@ -1,5 +1,7 @@
 import { current } from "@reduxjs/toolkit";
 import React, { useEffect, useRef, useState } from "react";
+import Loading from "./components/loading/Loading";
+import Toast from "./components/toast/Toast";
 
 const Demo = () => {
   const [count, setCount] = useState(0);
@@ -16,6 +18,10 @@ const Demo = () => {
       <h1>{count}</h1>
       <h1>{countRef.current}</h1>
       <button onClick={() => setCount(count + 1)}>plus</button>
+      <Loading />
+      <button onClick={() => <Toast type={"info"} message={"info Toast"} />}>
+        Toast
+      </button>
     </div>
   );
 };
