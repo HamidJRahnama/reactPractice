@@ -4,13 +4,18 @@ const Demo = () => {
   const [posts, setPosts] = useState([]);
   const [postindex, setPostIndex] = useState(3);
 
-  function userAction(type) {
-    switch (type) {
+  function userAction(action, payload) {
+    switch (action.type) {
       case "CHANGE-INDEX":
-        setPostIndex(postindex + 1);
-        if (postindex === posts.length - 1) {
-          setPostIndex(0);
+        console.log("log", action.number);
+        if (postindex === 0) {
+          setPostIndex(posts.length);
+        } else if (postindex === posts.length + 1) {
+          setPostIndex(1);
+        } else {
+          setPostIndex(action.number);
         }
+
         break;
 
       default:
@@ -23,19 +28,25 @@ const Demo = () => {
       .then((posts) => setPosts(posts));
   }, []);
 
-  const changePostIndex = () => {
-    userAction("CHANGE-INDEX");
+  const changePostIndex = (number) => {
+    userAction({ type: "CHANGE-INDEX", number });
   };
-  // console.log(posts[postindex].title);
+  console.log(posts[postindex] !== undefined ? posts[postindex] : "nothig");
   return (
     <div>
       <input
         value={postindex}
         type="number"
-        onChange={(e) => changePostIndex(e)}
+        onChange={(e) => changePostIndex(parseInt(e.target.value))}
       />
 
-      {/* <h1>{posts ? posts[postindex].title : null}</h1> */}
+      {posts[postindex - 1] !== undefined ? (
+        <>
+          <h1>{posts[postindex - 1].title}</h1>
+        </>
+      ) : (
+        <h1>there is no posts wuth {postindex - 1} id</h1>
+      )}
 
       {/* {posts.length == 0 ? (
         <>

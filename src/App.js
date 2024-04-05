@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
+import AxiosSamp from "./components/axios/AxiosSamp";
 
 // import Posts from "./components/posts/Posts";
 
@@ -8,16 +9,24 @@ import "bootstrap/dist/css/bootstrap.css";
 //       .then(response => response.json())
 //       .then(data => console.log(json))
 
-import Demo from "./Demo";
-import SignUp from "./components/signUpIn/SignUp";
 export const App = () => {
   return (
     <div>
-      <Demo />
-      {/* <SignUp /> */}
+      <AxiosSamp />
     </div>
   );
 };
+
+// import Demo from "./Demo";
+// import SignUp from "./components/signUpIn/SignUp";
+// export const App = () => {
+//   return (
+//     <div>
+//       <Demo />
+//       <SignUp />
+//     </div>
+//   );
+// };
 
 // import CocCardsSlider from "./components/CocCardSlider/CocCardsSlider";
 // export const App = () => {
