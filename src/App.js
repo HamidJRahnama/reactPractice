@@ -9,13 +9,26 @@ import AxiosSamp from "./components/axios/AxiosSamp";
 //       .then(response => response.json())
 //       .then(data => console.log(json))
 
+import HomePage from "./Blog/pages/HomePage/HomePage";
+import BlogPage from "./Blog/pages/BlogPage/BlogPage";
+import BlogLayout from "./Blog/layout/BlogLayout";
 export const App = () => {
   return (
     <div>
-      <AxiosSamp />
+      {/* <BlogLayout /> */}
+      {/* <HomePage /> */}
+      <BlogPage />
     </div>
   );
 };
+
+// export const App = () => {
+//   return (
+//     <div>
+//       <AxiosSamp />
+//     </div>
+//   );
+// };
 
 // import Demo from "./Demo";
 // import SignUp from "./components/signUpIn/SignUp";
